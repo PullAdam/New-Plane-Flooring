@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New Plane Flooring | Luxury Vinyl Plank Installation in Grand Rapids</title>
+  <meta name="description" content="Luxury vinyl plank flooring installation for Grand Rapids families. On time, upfront pricing, and the whole job taken care of. Text for a free quote.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top"><img class="logo-mark" src="images/logo.png" alt="New Plane Flooring logo">NEW PLANE FLOORING</a>
+      <a class="btn btn-small" href="sms:+16165550100">Text for a free quote</a>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="container">
+      <h1>A fresh start underfoot, without the hassle.</h1>
+      <p class="lead">Luxury vinyl plank flooring, installed start to finish for Grand Rapids families. On time, upfront pricing, and a clean home when we leave.</p>
+      <div class="buttons">
+        <a class="btn hero-contact-button" href="sms:+16165550100">Text 616-555-0100</a>
+        <a class="btn btn-outline hero-contact-button" href="mailto:hello@example.com?subject=Free%20flooring%20quote">Email for a free quote</a>
+      </div>
+      <p class="small" id="desktop-contact-note" hidden>On a computer? Text 616-555-0100 from your phone, or email hello@example.com.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section">
+    <div class="container">
+      <h2>What we do</h2>
+      <p class="section-intro">Tired floors make a whole room feel dated. We replace them with durable, good-looking luxury vinyl plank that handles kids, pets, and everyday life.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>Vinyl plank installation</h3>
+          <p>Waterproof, scratch-resistant, and realistic wood looks, installed with care.</p>
+        </div>
+        <div class="card">
+          <h3>Old floor removal</h3>
+          <p>We tear out worn carpet, vinyl, or laminate and haul it away.</p>
+        </div>
+        <div class="card">
+          <h3>Prep and finishing</h3>
+          <p>A flat, solid base and clean trim, so the room looks finished, not just floored.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2>How it works</h2>
+      <div class="cards">
+        <div class="card">
+          <span class="step-number">1</span>
+          <h3>Text us</h3>
+          <p>Send a message about your space. We'll give you a clear price with no surprises.</p>
+        </div>
+        <div class="card">
+          <span class="step-number">2</span>
+          <h3>We handle it</h3>
+          <p>We show up on time, prep the space, and install your new floor.</p>
+        </div>
+        <div class="card">
+          <span class="step-number">3</span>
+          <h3>Enjoy your home</h3>
+          <p>We clean up and walk you through the finished job. You just move the furniture back.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-dark" id="contact">
+    <div class="container center">
+      <h2>Ready for a free quote?</h2>
+      <p class="section-intro">The easiest way is to text us a few details, like which rooms and roughly how big. We'll reply within one business day.</p>
+      <div class="buttons">
+        <a class="btn btn-tan" href="sms:+16165550100">Text 616-555-0100</a>
+        <a class="btn btn-outline" href="mailto:hello@example.com?subject=Free%20flooring%20quote">Email hello@example.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>New Plane Flooring</strong> | Grand Rapids, Michigan</p>
+      <p class="small">&copy; 2026 New Plane Flooring</p>
+    </div>
+  </footer>
+
+  <script>
+    const isWindows = navigator.userAgentData?.platform === "Windows" || navigator.platform.startsWith("Win");
+    const desktopContactNote = document.getElementById("desktop-contact-note");
+
+    if (isWindows) {
+      document.querySelectorAll(".hero-contact-button").forEach((button) => {
+        button.addEventListener("click", () => {
+          desktopContactNote.hidden = false;
+        });
+      });
+    }
+  </script>
+
+</body>
+</html>
