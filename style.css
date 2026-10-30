@@ -4,7 +4,7 @@
 :root {
   /* ---- 1. YOUR PALETTE ---- */
   --color-primary:      #173C32;  /* main dark brand color */
-  --color-accent:       #B89568;  /* highlight color */
+  --color-accent:       #F4EBDD;  /* highlight color */
   --color-background:   #F4EBDD;  /* page background */
   --color-text-on-dark: #F4EBDD;  /* text on primary and hero */
 
@@ -116,6 +116,18 @@ a { color: inherit; }
   align-items: center; justify-content: center; margin-bottom: 12px;
 }
 
+/* ===== GALLERY ===== */
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.gallery figure { margin: 0; }
+.gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; display: block; }
+.gallery figcaption { font-size: .9rem; margin-top: 8px; opacity: .85; }
+
+/* ===== FAQ ===== */
+.narrow { max-width: 720px; }
+details { border-bottom: 1px solid var(--color-line); padding: 16px 0; }
+summary { cursor: pointer; font-weight: 600; font-size: 1.1rem; }
+details p { margin: 12px 0 0; }
+
 /* ===== FOOTER ===== */
 .site-footer { background: var(--color-primary); color: var(--color-text-on-dark); text-align: center; padding: 28px 0; border-top: 1px solid var(--color-line-light); }
 .site-footer p { margin: 4px 0; }
@@ -127,6 +139,7 @@ a { color: inherit; }
   .logo-mark { width: 32px; height: 32px; }
   .btn-small { padding: 8px 14px; font-size: .85rem; }
   .hero { padding: 60px 0 50px; }
+  .hero h3.lead { font-size: 1.2rem; }
   .about { flex-direction: column; text-align: center; }
   .about-photo { width: 120px; height: 120px; }
 }
